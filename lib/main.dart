@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:desafio_sprint_3/screen1.dart';
+import 'package:desafio_sprint_3/search_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Container(),
+      home: searchScreen(),
     );
   }
 }
