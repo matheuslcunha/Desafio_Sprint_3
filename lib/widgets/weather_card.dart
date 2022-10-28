@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:desafio_sprint_3/weather_model.dart';
-import 'package:desafio_sprint_3/connection_controller.dart';
-import 'package:desafio_sprint_3/condition_controller.dart';
+import 'package:desafio_sprint_3/models/weather_model.dart';
+import 'package:desafio_sprint_3/controllers/connection_controller.dart';
+import 'package:desafio_sprint_3/controllers/condition_controller.dart';
 
 class WeatherCard extends StatefulWidget {
   final String cityName;
@@ -73,7 +73,7 @@ class _WeatherCardState extends State<WeatherCard> {
                     width: constraints.maxWidth,
                     child: Center(
                       child: Text(
-                        '${weather.time}   ${weather.date}',
+                        '${weather.date}',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 22,

@@ -1,4 +1,4 @@
-import 'package:desafio_sprint_3/forecast_model.dart';
+import 'package:desafio_sprint_3/models/forecast_model.dart';
 
 class Weather {
   String? date;

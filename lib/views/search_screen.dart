@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:desafio_sprint_3/home_screen.dart';
+import 'package:desafio_sprint_3/views/home_screen.dart';
 
 class searchScreen extends StatefulWidget {
   const searchScreen({super.key});
@@ -77,7 +77,7 @@ class _searchScreen extends State<searchScreen> {
                               child: TextField(
                                 controller: nameController,
                                 decoration: InputDecoration(
-                                  prefixIcon: Icon(Icons.search_rounded),
+                                  //prefixIcon: Icon(Icons.search_rounded),
                                   enabledBorder: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(20),
                                     borderSide: BorderSide(
@@ -117,8 +117,8 @@ class _searchScreen extends State<searchScreen> {
                                   ),
                                 );
                               },
-                              icon: Icon(Icons.arrow_circle_right_sharp),
-                              iconSize: 50,
+                              icon: Icon(Icons.search),
+                              iconSize: 40,
                               color: Colors.blue,
                             ),
                           )

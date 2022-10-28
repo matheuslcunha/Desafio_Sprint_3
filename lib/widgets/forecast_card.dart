@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:desafio_sprint_3/weather_model.dart';
-import 'package:desafio_sprint_3/forecast_model.dart';
+import 'package:desafio_sprint_3/models/weather_model.dart';
+import 'package:desafio_sprint_3/models/forecast_model.dart';
 //import 'package:desafio_sprint_3/connection.dart';
-import 'package:desafio_sprint_3/condition_controller.dart';
+import 'package:desafio_sprint_3/controllers/condition_controller.dart';
 
 class ForecastCard extends StatefulWidget {
   final int index;

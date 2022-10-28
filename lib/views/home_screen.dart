@@ -1,9 +1,9 @@
-import 'package:desafio_sprint_3/weather_model.dart';
-import 'package:desafio_sprint_3/forecast_model.dart';
-import 'package:desafio_sprint_3/connection_controller.dart';
+import 'package:desafio_sprint_3/models/weather_model.dart';
+import 'package:desafio_sprint_3/models/forecast_model.dart';
+import 'package:desafio_sprint_3/controllers/connection_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:desafio_sprint_3/weather_card.dart';
-import 'package:desafio_sprint_3/forecast_card.dart';
+import 'package:desafio_sprint_3/widgets/weather_card.dart';
+import 'package:desafio_sprint_3/widgets/forecast_card.dart';
 
 class homeScreen extends StatefulWidget {
   final String cityName;
@@ -185,7 +185,18 @@ class _homeScreen extends State<homeScreen> {
                         ),
                       );
                     } else if (snapshot.hasError) {
-                      return Center(child: Text("sheesh, deu erro aqui..."));
+                      return Container(
+                        height: MediaQuery.of(context).size.height * 0.80,
+                        width: MediaQuery.of(context).size.height * 0.5,
+                        child: Center(
+                          child: Text(
+                            "Ocorreu um problema ao buscar os dados, verifique a sua conexão...",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 20),
+                          ),
+                        ),
+                      );
                     } else {
                       return Center(child: const CircularProgressIndicator());
                     }
